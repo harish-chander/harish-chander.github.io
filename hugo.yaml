@@ -1,4 +1,30 @@
-baseURL: https://example.org/
+baseURL: https://www.infobug.org/
 languageCode: en-us
-title: My New Hugo Site
+title: Infobug Tech blog
 theme: ["PaperMod"]
+enableRobotsTXT: true
+googleAnalytics: G-GYCMBHKS79
+minify:
+  disableXML: true
+  minifyOutput: true
+params:
+  env: production
+  title: Infobug Tech blog
+  author: Harish Chander
+  DateFormat: "January 2, 2024"
+  defaultTheme: dark
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
