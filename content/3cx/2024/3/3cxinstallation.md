@@ -1,7 +1,7 @@
 +++
 title = '3cxinstallation'
 date = 2024-03-25T13:00:14+04:00
-draft = true
+draft = false
 +++
 
 # Installation of 3CX on Debian 12
@@ -71,5 +71,5 @@ draft = true
 
     Thank you for reading!
 
-    
+
 
