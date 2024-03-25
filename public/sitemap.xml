@@ -4,21 +4,37 @@
   <url>
     <loc>http://localhost:1313/3cx/</loc>
     <lastmod>2024-03-25T13:00:14+04:00</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/3cx/2024/3/3cxinstallation/</loc>
     <lastmod>2024-03-25T13:00:14+04:00</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2024-03-25T13:00:14+04:00</lastmod>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <changefreq>hourly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
