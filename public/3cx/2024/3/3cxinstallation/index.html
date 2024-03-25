@@ -83,8 +83,8 @@ For this guide, we will use Debian 12 as the operating system. Debian is a free 
   "keywords": [
     
   ],
-  "articleBody": "Installation of 3CX on Debian 12 Introduction This guide will help you to install 3CX on Debian 12. 3CX is a software-based private branch exchange (PBX) based on the SIP (Session Initiation Protocol) standard. It enables extensions to make calls via the public switched telephone network (PSTN) or via Voice over Internet Protocol (VoIP) services.\nFor this guide, we will use Debian 12 as the operating system. Debian is a free and open-source operating system that is widely used in the server environment. It is known for its stability, security, and ease of use.\nmore information about 3CX, you can visit the official website at 3CX.\nPrerequisites Before you start with the installation of 3CX on Debian 12, you need to have the following prerequisites: - A server or virtual machine running Debian 12. - Root access to the server or virtual machine. - A valid FQDN (Fully Qualified Domain Name) for the server. or you can use the free domain provided by 3cx wizard - A valid SSL certificate for the FQDN. or you can use the free SSL certificate provided by 3cx wizard - A valid license key for 3CX. You can get a free license key by signing up on the 3CX website. - A stable internet connection. - Basic knowledge of Linux and the command line. - Basic knowledge of networking and VoIP. Step 1: Update the System Before you start with the installation of 3CX, it is recommended to update the system to the latest version. You can do this by running the following commands: ```bash sudo apt update sudo apt upgrade ``` This will update the package list and upgrade the installed packages to the latest version. Step 2: Install Dependencies 3CX requires some dependencies to be installed on the system. You can install them by running the following command: ```bash sudo apt install curl wget gnupg2 dirmngr ``` This will install the required dependencies on the system. Step 3: Download the 3CX Installation Script 3CX provides an installation script that will automate the installation process. You can download the script by running the following command: ```bash curl -O https://downloads-global.3cx.com/downloads/3cxpbx/public.key \u0026\u0026 sudo apt-key add public.key ``` This will download the installation script and add the public key to the system. Step 4: Install 3CX Once you have downloaded the installation script, you can install 3CX by running the following command: ```bash echo \"deb http://downloads-global.3cx.com/downloads/debian stretch main\" | sudo tee /etc/apt/sources.list.d/3cxpbx.list sudo apt update sudo apt install 3cxpbx ``` This will add the 3CX repository to the system and install 3CX on Debian 12. Step 5: Configure 3CX This below step is only requried if you are want to run the setup wizard again. After the installation is complete, you can configure 3CX by running the following command: ```bash sudo /usr/sbin/3CXWizard ``` This will start the 3CX configuration wizard, where you can set up the basic configuration of 3CX. Step 6: Access 3CX Web Interface Once the configuration is complete, you can access the 3CX web interface by opening a web browser and navigating to `https://:5051`. You will be prompted to log in with the username and password you set during the configuration process. Conclusion In this guide, you have learned how to install 3CX on Debian 12. You can now start using 3CX to make calls via the public switched telephone network (PSTN) or via Voice over Internet Protocol (VoIP) services. If you have any questions or feedback, feel free to leave a comment below. Thank you for reading! ",
-  "wordCount" : "585",
+  "articleBody": "Installation of 3CX on Debian 12 Introduction This guide will help you to install 3CX on Debian 12. 3CX is a software-based private branch exchange (PBX) based on the SIP (Session Initiation Protocol) standard. It enables extensions to make calls via the public switched telephone network (PSTN) or via Voice over Internet Protocol (VoIP) services.\nFor this guide, we will use Debian 12 as the operating system. Debian is a free and open-source operating system that is widely used in the server environment. It is known for its stability, security, and ease of use.\nmore information about 3CX, you can visit the official website at 3CX.\nPrerequisites Before you start with the installation of 3CX on Debian 12, you need to have the following prerequisites:\nA server or virtual machine running Debian 12. Root access to the server or virtual machine. A valid FQDN (Fully Qualified Domain Name) for the server. or you can use the free domain provided by 3cx wizard A valid SSL certificate for the FQDN. or you can use the free SSL certificate provided by 3cx wizard A valid license key for 3CX. You can get a free license key by signing up on the 3CX website. A stable internet connection. Basic knowledge of Linux and the command line. Basic knowledge of networking and VoIP. Step 1: Update the System Before you start with the installation of 3CX, it is recommended to update the system to the latest version. You can do this by running the following commands:\nsudo apt update sudo apt upgrade This will update the package list and upgrade the installed packages to the latest version.\nStep 2: Install Dependencies 3CX requires some dependencies to be installed on the system. You can install them by running the following command:\nsudo apt install curl wget gnupg2 dirmngr This will install the required dependencies on the system.\nStep 3: Download the 3CX Installation Script 3CX provides an installation script that will automate the installation process. You can download the script by running the following command:\ncurl -O https://downloads-global.3cx.com/downloads/3cxpbx/public.key \u0026\u0026 sudo apt-key add public.key This will download the installation script and add the public key to the system.\nStep 4: Install 3CX Once you have downloaded the installation script, you can install 3CX by running the following command:\necho \"deb http://downloads-global.3cx.com/downloads/debian stretch main\" | sudo tee /etc/apt/sources.list.d/3cxpbx.list sudo apt update sudo apt install 3cxpbx This will add the 3CX repository to the system and install 3CX on Debian 12.\nStep 5: Configure 3CX This below step is only requried if you are want to run the setup wizard again. After the installation is complete, you can configure 3CX by running the following command:\nsudo /usr/sbin/3CXWizard This will start the 3CX configuration wizard, where you can set up the basic configuration of 3CX.\nStep 6: Access 3CX Web Interface Once the configuration is complete, you can access the 3CX web interface by opening a web browser and navigating to https://:5051. You will be prompted to log in with the username and password you set during the configuration process.\nConclusion In this guide, you have learned how to install 3CX on Debian 12. You can now start using 3CX to make calls via the public switched telephone network (PSTN) or via Voice over Internet Protocol (VoIP) services. If you have any questions or feedback, feel free to leave a comment below.\nThank you for reading!\n",
+  "wordCount" : "567",
   "inLanguage": "en",
   "datePublished": "2024-03-25T13:00:14+04:00",
   "dateModified": "2024-03-25T13:00:14+04:00",
@@ -170,7 +170,7 @@ For this guide, we will use Debian 12 as the operating system. Debian is a free 
     <h1 class="post-title entry-hint-parent">
       3cxinstallation
     </h1>
-    <div class="post-meta"><span title='2024-03-25 13:00:14 +0400 +04'>March 25, 25250</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;585 words&nbsp;·&nbsp;Harish Chander
+    <div class="post-meta"><span title='2024-03-25 13:00:14 +0400 +04'>March 25, 25250</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;567 words&nbsp;·&nbsp;Harish Chander
 
 </div>
   </header> 
@@ -180,63 +180,46 @@ For this guide, we will use Debian 12 as the operating system. Debian is a free 
 <p>For this guide, we will use Debian 12 as the operating system. Debian is a free and open-source operating system that is widely used in the server environment. It is known for its stability, security, and ease of use.</p>
 <p>more information about 3CX, you can visit the official website at <a href="https://www.3cx.com/">3CX</a>.</p>
 <h2 id="prerequisites">Prerequisites<a hidden class="anchor" aria-hidden="true" href="#prerequisites">#</a></h2>
-<pre><code>Before you start with the installation of 3CX on Debian 12, you need to have the following prerequisites:
-- A server or virtual machine running Debian 12.
-- Root access to the server or virtual machine.
-- A valid FQDN (Fully Qualified Domain Name) for the server. or you can use the free domain provided by 3cx wizard
-- A valid SSL certificate for the FQDN. or you can use the free SSL certificate provided by 3cx wizard
-- A valid license key for 3CX. You can get a free license key by signing up on the 3CX website.
-- A stable internet connection.
-- Basic knowledge of Linux and the command line.
-- Basic knowledge of networking and VoIP.
-</code></pre>
+<p>Before you start with the installation of 3CX on Debian 12, you need to have the following prerequisites:</p>
+<ul>
+<li>A server or virtual machine running Debian 12.</li>
+<li>Root access to the server or virtual machine.</li>
+<li>A valid FQDN (Fully Qualified Domain Name) for the server. or you can use the free domain provided by 3cx wizard</li>
+<li>A valid SSL certificate for the FQDN. or you can use the free SSL certificate provided by 3cx wizard</li>
+<li>A valid license key for 3CX. You can get a free license key by signing up on the 3CX website.</li>
+<li>A stable internet connection.</li>
+<li>Basic knowledge of Linux and the command line.</li>
+<li>Basic knowledge of networking and VoIP.</li>
+</ul>
 <h2 id="step-1-update-the-system">Step 1: Update the System<a hidden class="anchor" aria-hidden="true" href="#step-1-update-the-system">#</a></h2>
-<pre><code>Before you start with the installation of 3CX, it is recommended to update the system to the latest version. You can do this by running the following commands:
-```bash
-sudo apt update
-sudo apt upgrade
-```
-This will update the package list and upgrade the installed packages to the latest version.
-</code></pre>
+<p>Before you start with the installation of 3CX, it is recommended to update the system to the latest version. You can do this by running the following commands:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt upgrade
+</span></span></code></pre></div><p>This will update the package list and upgrade the installed packages to the latest version.</p>
 <h2 id="step-2-install-dependencies">Step 2: Install Dependencies<a hidden class="anchor" aria-hidden="true" href="#step-2-install-dependencies">#</a></h2>
-<pre><code>3CX requires some dependencies to be installed on the system. You can install them by running the following command:
-```bash
-sudo apt install curl wget gnupg2 dirmngr
-```
-This will install the required dependencies on the system.
-</code></pre>
+<p>3CX requires some dependencies to be installed on the system. You can install them by running the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo apt install curl wget gnupg2 dirmngr
+</span></span></code></pre></div><p>This will install the required dependencies on the system.</p>
 <h2 id="step-3-download-the-3cx-installation-script">Step 3: Download the 3CX Installation Script<a hidden class="anchor" aria-hidden="true" href="#step-3-download-the-3cx-installation-script">#</a></h2>
-<pre><code>3CX provides an installation script that will automate the installation process. You can download the script by running the following command:
-```bash
-curl -O https://downloads-global.3cx.com/downloads/3cxpbx/public.key &amp;&amp; sudo apt-key add public.key
-```
-This will download the installation script and add the public key to the system.
-</code></pre>
+<p>3CX provides an installation script that will automate the installation process. You can download the script by running the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl -O https://downloads-global.3cx.com/downloads/3cxpbx/public.key <span class="o">&amp;&amp;</span> sudo apt-key add public.key
+</span></span></code></pre></div><p>This will download the installation script and add the public key to the system.</p>
 <h2 id="step-4-install-3cx">Step 4: Install 3CX<a hidden class="anchor" aria-hidden="true" href="#step-4-install-3cx">#</a></h2>
-<pre><code>Once you have downloaded the installation script, you can install 3CX by running the following command:
-```bash
-echo &quot;deb http://downloads-global.3cx.com/downloads/debian stretch main&quot; | sudo tee /etc/apt/sources.list.d/3cxpbx.list
-sudo apt update
-sudo apt install 3cxpbx
-```
-This will add the 3CX repository to the system and install 3CX on Debian 12.
-</code></pre>
+<p>Once you have downloaded the installation script, you can install 3CX by running the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;deb http://downloads-global.3cx.com/downloads/debian stretch main&#34;</span> <span class="p">|</span> sudo tee /etc/apt/sources.list.d/3cxpbx.list
+</span></span><span class="line"><span class="cl">sudo apt update
+</span></span><span class="line"><span class="cl">sudo apt install 3cxpbx
+</span></span></code></pre></div><p>This will add the 3CX repository to the system and install 3CX on Debian 12.</p>
 <h2 id="step-5-configure-3cx">Step 5: Configure 3CX<a hidden class="anchor" aria-hidden="true" href="#step-5-configure-3cx">#</a></h2>
-<pre><code>This below step is only requried if you are want to run the setup wizard again.
-After the installation is complete, you can configure 3CX by running the following command:
-```bash
-sudo /usr/sbin/3CXWizard
-```
-This will start the 3CX configuration wizard, where you can set up the basic configuration of 3CX.
-</code></pre>
+<p>This below step is only requried if you are want to run the setup wizard again.
+After the installation is complete, you can configure 3CX by running the following command:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo /usr/sbin/3CXWizard
+</span></span></code></pre></div><p>This will start the 3CX configuration wizard, where you can set up the basic configuration of 3CX.</p>
 <h2 id="step-6-access-3cx-web-interface">Step 6: Access 3CX Web Interface<a hidden class="anchor" aria-hidden="true" href="#step-6-access-3cx-web-interface">#</a></h2>
-<pre><code>Once the configuration is complete, you can access the 3CX web interface by opening a web browser and navigating to `https://&lt;your-server-ip&gt;:5051`. You will be prompted to log in with the username and password you set during the configuration process.
-</code></pre>
+<p>Once the configuration is complete, you can access the 3CX web interface by opening a web browser and navigating to <code>https://&lt;your-server-ip&gt;:5051</code>. You will be prompted to log in with the username and password you set during the configuration process.</p>
 <h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
-<pre><code>In this guide, you have learned how to install 3CX on Debian 12. You can now start using 3CX to make calls via the public switched telephone network (PSTN) or via Voice over Internet Protocol (VoIP) services. If you have any questions or feedback, feel free to leave a comment below.
-
-Thank you for reading!
-</code></pre>
+<p>In this guide, you have learned how to install 3CX on Debian 12. You can now start using 3CX to make calls via the public switched telephone network (PSTN) or via Voice over Internet Protocol (VoIP) services. If you have any questions or feedback, feel free to leave a comment below.</p>
+<p>Thank you for reading!</p>
 
 
   </div>
